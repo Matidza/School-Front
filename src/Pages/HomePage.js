@@ -12,7 +12,7 @@ const HomePage = () => {
     }, [])
 
     let getData = async (query = "") => {
-        let response = await axios.get(`http://127.0.0.1:8000/schools?query=${query}`)
+        let response = await axios.get(`https://admission-school-details.up.railway.app/schools?query=${query}`)
         console.log('RESPONSE:', response)
         setSchools(response.data)
         setTotal(response.data.total)
