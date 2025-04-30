@@ -11,7 +11,7 @@ const SchoolPage = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/school/${username}`);
+        const response = await axios.get(`https://admission-school-details.up.railway.app/school/${username}`);
         setSchool(response.data);
         setLoading(false);
       } catch (err) {
