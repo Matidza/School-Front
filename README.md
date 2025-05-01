@@ -1,70 +1,115 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# 🎓 Admission-Schools Frontend (React)
 
-In the project directory, you can run:
+This is the React frontend for the **Admission-Schools** platform — a web application that allows parents to apply for school admissions from home, view real-time application statuses, and browse schools across South Africa. It communicates with a Django REST API that manages and stores school data.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🧩 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔍 **Browse South African Schools**  
+  Search and filter schools by name, location, and type.
 
-### `npm test`
+- 📝 **Apply for Admission**  
+  Parents can submit admission applications online for their children.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🗂️ **Upload Documents**  
+  Upload required documents like transcripts, medical records, and photos.
 
-### `npm run build`
+- 🚦 **Track Application Status**  
+  Real-time updates on the status of submitted applications.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🏫 **School Portal**  
+  Registered schools can review and manage applications.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Tech Stack
 
-### `npm run eject`
+- **Frontend**: React.js, Axios, Bootstrap (or TailwindCSS if applicable)
+- **Backend**: Django REST Framework (API)
+- **API Communication**: Axios for HTTP requests
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Make sure you have the following installed:
 
-## Learn More
+- Node.js
+- npm or yarn
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository:
 
-### Code Splitting
+   ```bash
+   git clone https://github.com/your-username/admission-schools-frontend.git
+   cd admission-schools-frontend
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Install dependencies:
 
-### Analyzing the Bundle Size
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Configure API base URL:  
+   Create a `.env` file in the root and add:
 
-### Making a Progressive Web App
+   ```env
+   REACT_APP_API_BASE_URL=http://localhost:8000/api
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Start the development server:
 
-### Advanced Configuration
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📁 Project Structure
 
-### `npm run build` fails to minify
+```
+src/
+│
+├── components/         # Reusable UI components
+├── pages/              # Route-level components
+├── services/           # Axios API functions
+├── assets/             # Images, styles, etc.
+├── App.js              # Main app layout
+└── index.js            # App entry point
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🌍 API Reference
+
+All school data and admission forms are powered by a Django REST API.  
+Refer to the [API GitHub Repo](https://github.com/Matidza/CORE) for more details.
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+Builds the app for production to the `build/` directory.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for details.
+
+---
